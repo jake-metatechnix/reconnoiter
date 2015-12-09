@@ -1,0 +1,35 @@
+
+usernameGen
+-------------
+usernameGen is a couple of scripts which create potential usernames
+by querying Google or Yahoo for company on Linkedin.com.  It's 
+similar to searching for "site:linkedin.com SomeCompanyName".  The
+scripts then takes the results, tries to clean them up, and creates
+possible usernames from the names in the results.
+
+Currently supported username combinations are:
+
+  - first initial + last name
+  - first name + last initial
+  - last name + first initial
+  - first initial + middle initial + last name
+
+If you have other username schemes you have seen, please let me know.
+
+
+Requirements:
+  - Python 2.5
+  - A Yahoo AppID, if you want to use usernameGenYahoo.py
+
+Usage:
+-----------
+The scripts are pretty straight forward. 
+
+ > ./usernameGen.py CompanyName #ofResultsToFetch
+
+or
+
+ > ./usernameGenYahoo.py CompanyName YahooAPP-ID #ofResultsToFetch
+
+The scripts will echo the usernames to STDOUT, so you can dump them to
+a text file by adding "> username.list" to the end of the examples.

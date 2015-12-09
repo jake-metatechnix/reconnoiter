@@ -1,0 +1,80 @@
+linkedinProfileHarvester.py
+===========================
+11/10/11
+  - Added this script for the first pass at release.  Searches for names and profile
+    pages on Linkedin.com based on company name and displays them to the screen.
+    Fairly rough at this point, but it works.
+
+usernameGenYahoo.py
+=====================
+8/9/2011
+  - Fixed regex due to changes in text displayed by linkedin
+  - Changed the yahoo query to include "inurl:pub" so that we are seeing more information
+    for individuals rather than company posted material
+  - Did some clean up to remove additional text being served by linkedin to yahoo
+  - Changed the text files being written by the script to include the target company name
+    as part of the file name.  Trying to make it clear which company the username lists
+    are for.
+
+9/1/2009 
+  - Did a bug fix for when results were less than 50, but more than
+    50 were requested.  
+
+9/15/2009 
+  - Added some regex to filter out results which contained HTML.
+
+10/8/2009
+  Updated by Larry Pesce, http://www.pauldotcom.com, larry@pauldotcom.com
+  - Added file output for usernames based on composition:
+  - firstl: First name, last initial
+  - flast: First inistial, last name
+  - lastf: Last name, first initial
+  - fmlast: First initial, middle initial, last name
+
+
+usernameGen.py
+================
+8/30/2012
+  - Fixed the regex.  Google modified some of the HTML returned and needed a small modification.
+5/26/2012
+  - Fixed the regex.  Google modified some of the HTML returned and needed a small modification.
+8/9/2011
+  - Fixed regex due to changes in text displayed by linkedin
+  - Changed the google query to include "inurl:pub" so that we are seeing more information
+    for individuals rather than company posted material
+  - Did some clean up to remove additional text being served by linkedin to google
+  - Changed the text files being written by the script to include the target company name
+    as part of the file name.  Trying to make it clear which company the username lists 
+    are for.
+1/17/2011
+  - Changed User Agent to show up as Lynx instead of a browser that supports javascript
+  - Fixed regex due to change in google UI
+
+6/12/2009
+  - URL was changed to use mobile search
+  - Regex was tweaked so it would work again
+  - Limited the response to only the title
+    of each result.
+  - Added a new class and method which:
+   -  takes the results of the title for the result and extracts the persons first and last name
+   -  then makes usernames with the first initial & last name and first name & last initial
+
+6/16/2009
+  - Added handling for when there are middle names.  creates usernames in the format of
+    first initial, middle initial, last name
+
+6/28/2009
+  - Added "paddbottom" tag fix by Robin Wood for a new tag to match on
+  - Added fix for the regex by Robin Wood
+  - Added scheme for lastname + first initial usernames 
+
+9/15/2009
+  - Added some regex to filter out results which contain HTML in them. 
+
+10/8/2009
+	Updated by Larry Pesce, http://www.pauldotcom.com, larry@pauldotcom.com
+  - Added file output for usernames based on composition:
+	- firstl: First name, last initial
+	- flast: First inistial, last name
+	- lastf: Last name, first initial
+	- fmlast: Fisrt initial, middle initial, last name
