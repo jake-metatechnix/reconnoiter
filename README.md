@@ -35,7 +35,7 @@ than the usernameGen scripts which can be used to seed word lists
 for brute force tools.
 
 If you have any issues or would like to request specific types of
-scripts, please send it in at http://reconnoiter.sourceforge.net.
+scripts, please send it in at https://github.com/tadaka/reconnoiter
 
 Thanks,
 Jason
@@ -43,4 +43,3 @@ Jason
 -- 
 irc: Tadaka
 Twitter:  Jason_Wood
-jwnetworkconsulting.com
